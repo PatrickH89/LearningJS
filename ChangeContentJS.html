@@ -1,0 +1,56 @@
+<!DOCTYPE>
+<html>
+
+    <head>
+
+    </head>
+
+    <body>
+
+        <!-- Change Text with onclick function in JS -->
+        <p id="text0">Hello World!</p>
+        <button id="myButton0">Text ändern!</button>
+
+        <!-- Change second Text with onclick function in JS -->
+        <p id="text1">JavaScript ist</p>
+        <button id="myButton1">Text ändern!</button>
+
+        <!-- append Text with onclick function in JS -->
+        <p id="text2">JavaScript ist</p>
+        <button id="myButton2">Text anhängen!</button>
+
+        <!-- append Text and Button with onclick function in JS -->
+        <p id="text3">JavaScript ist</p>
+        <button id="myButton3">Text anhängen!</button>
+
+        <!-- Here inside is JS to give HTML funcionality -->
+        <script type="text/javascript">
+
+            //JS function onclick
+            document.getElementById("myButton0").onclick = function() 
+            {
+                document.getElementById("text0").innerHTML = "<h1>Hallo Patrick!</h1>";
+            }
+
+            // Another JS function onclick
+            document.getElementById("myButton1").onclick = function() 
+            {
+                document.getElementById("text1").innerHTML = "Hallo Joshua!";
+            }
+
+            // Another JS function onclick with append
+            document.getElementById("myButton2").onclick = function() 
+            {
+                document.getElementById("text2").innerHTML = "ich finde " + document.getElementById("text2").innerHTML + " super!";
+            }
+
+            // Another JS function onclick with append
+            document.getElementById("myButton3").onclick = function() 
+            {
+                document.getElementById("text3").innerHTML = "ich finde " + document.getElementById("text3").innerHTML + " super!" + "<button>Text anhängen!</button>";
+            }
+        </script>
+
+    </body>
+
+</html>
